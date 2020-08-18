@@ -12,43 +12,16 @@
 
   gtag('config', 'UA-172951122-1');
 </script>
-  <style>
-  body {
-    margin:0;
-  }
-a {
-  color:black;
-  text-decoration: none;
-}
-h1 {
-  font-size:45px;text-align:center;
-  border-bottom:1px solid gray;
-  margin:0px;
-  padding:20px;
-}
-#grid ol, ul {
-  width:100px;
-  margin:0;
-  padding:10px;
-  padding-left: 33px;
-}
-#grid {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-}
-#article {
-  padding-left: 25px;
-  border-left: 1px solid gray;
-  </style>
+  <link rel="stylesheet" href="style.css"
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
     <div>
       <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="1.html" style="color:blue; text-decoration:underline">HTML</a></li>
+        <li><a href="2.html" style="color:blue; text-decoration:underline">CSS</a></li>
+        <li><a href="3.html" style="color:blue; text-decoration:underline">JavaScript</a></li>
       </ol>
       <ul>
         <h4>캐릭터</h4>
@@ -59,7 +32,15 @@ h1 {
     <div id="article">
       <H2>WEB</H2>
       <p>WEB이란 어쩌구저쩌구 아래는 내가 좋아하는 빅토르 최의 사진이다. Web 과는 관련이 없다. <br><br>
-      <input type="checkbox"> 그냥 체크해라<br>
+      <input type="button" value="야간모드"
+      onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      ">
+      <input type="button" value="주간모드"
+      onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';">
       <img src="Viktor-index.jpg" width="100%" style="margin-top:30px;"></P>
       <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
